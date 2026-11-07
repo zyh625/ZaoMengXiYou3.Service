@@ -1,0 +1,81 @@
+# ============================================================
+# ZaoMengXiYou3.Server .gitignore
+# ============================================================
+
+# ---------- 玩家数据（账号、密码哈希、云存档）----------
+# SQLite 数据库及其运行时附带文件，绝不能上传
+*.db
+*.db-shm
+*.db-wal
+*.db-journal
+*.sqlite
+*.sqlite3
+# 数据库备份
+*.bak
+*.backup
+
+# ---------- 密钥与本地配置 ----------
+# JWT 密钥放在 User Secrets（%APPDATA%\Microsoft\UserSecrets），不在项目内；
+# 以下规则防止以后误把密钥写进项目目录
+secrets.json
+appsettings.*.local.json
+appsettings.Local.json
+appsettings.Production.json
+appsettings.Staging.json
+.env
+.env.*
+*.pfx
+*.p12
+*.pem
+*.key
+*.crt
+*.cer
+*.snk
+*.publishsettings
+*.pubxml
+*.pubxml.user
+
+# ---------- 编译输出 ----------
+[Bb]in/
+[Oo]bj/
+[Dd]ebug/
+[Rr]elease/
+[Pp]ublish/
+out/
+artifacts/
+
+# ---------- NuGet ----------
+*.nupkg
+*.snupkg
+packages/
+!**/packages/build/
+project.lock.json
+project.fragment.lock.json
+
+# ---------- IDE / 编辑器 ----------
+.vs/
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+.idea/
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+*.DotSettings.user
+
+# ---------- 日志与临时文件 ----------
+logs/
+*.log
+*.tmp
+*.swp
+TestResults/
+coverage/
+
+# ---------- 系统文件 ----------
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+.DS_Store

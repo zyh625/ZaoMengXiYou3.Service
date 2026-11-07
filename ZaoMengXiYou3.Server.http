@@ -1,0 +1,6 @@
+@ZaoMengXiYou3.Server_HostAddress = http://localhost:5223
+
+GET {{ZaoMengXiYou3.Server_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
